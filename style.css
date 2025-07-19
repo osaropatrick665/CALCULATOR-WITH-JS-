@@ -1,0 +1,305 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+}
+body{
+    height : 100vh ;
+    display : flex ;
+    justify-content: center ;
+    align-items : center ;
+    background : grey ;
+     font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+     font-style: normal;
+
+
+}
+ 
+ 
+#display-screen{
+    border : solid 0.1rem #000;
+    padding : 0.8rem;
+    border-radius : 0.7rem;
+    outline : none ;
+    font-size : 2.5rem;
+    width : 100%;
+   color : #fff;
+
+}
+.container{
+    background : #000;
+    height : 60%;
+    max-width : 500px;
+    display : grid ;
+    grid-template-columns : repeat(2, 1fr);
+    padding : 1rem 3rem;
+    gap : 0.5rem;
+    border: 0.5rem solid #000;
+    border-radius : 2rem;
+
+}
+.btn-1{
+    background : #ffa600e7;
+    color : #fff;
+    padding : 0.6rem ;
+    letter-spacing: 0.1rem;
+    border: none ;
+    border-radius : 0.5rem;
+    font-size : 2rem;
+    font-weight : 700;
+    
+    
+}
+
+.new-btn{
+    background : #1717f6 ;
+    color : #fff;
+    padding : 1.2rem;
+    border : none ;
+    border-radius : 50%;
+    font-size : 2rem ;
+    transition : opacity 0.2s ease;
+   
+    
+}
+.new-btn:hover{
+    opacity : 0.6;
+}
+.second-btn{
+    background : green;
+    color : #fff;
+    padding : 1.2rem ;
+    border : none ;
+    border-radius : 50%;
+    font-size : 2rem ;
+     transition : opacity 0.2s ease;
+}
+.second-btn:hover{
+    opacity : 0.5;
+}
+.text-wrapper {
+    display : flex ;
+    justify-content : center ;
+    align-items:  center ;
+    grid-column : span 2;
+}
+.text-wrapper h1 {
+    font-size : 2rem;
+    color : green;
+    font-weight : 600;
+    text-align : center;
+    max-width : 300px;
+}
+.input-wrapper {
+    display : flex;
+    justify-content: center ;
+    grid-column : span 2;
+    align-items: center ;
+    
+
+}
+.wrapper-0{
+    display : flex;
+    align-items : center ;
+    justify-content: center ;
+
+}
+.btn-2{
+    font-size : 1rem;
+    padding : 1rem;
+    border-radius : 0.8rem;
+    border: none ;
+    background : red;
+    color : #fff;
+}
+.wrapper-1 {
+    display : flex;
+    justify-content: center ;
+    align-items : center ;
+   
+    
+    
+}
+.wrapper-2{
+    display  : grid ;
+    grid-template-columns: repeat(4, 1fr);
+    gap : 1.1rem;
+    align-items : center
+    
+}
+
+.wrapper-3{
+    display : flex ;
+    flex-direction : column;
+    gap : 0.8rem;
+    align-items: center ;
+    justify-content : center ;
+
+}
+ .animation-js{
+        opacity : 0.5;
+    
+        
+    }
+
+
+
+/*----------------media queries for small screen size 320px------*/
+@media (max-width : 381px){
+    .container{
+    height : 100%;
+    width : 100%;
+    padding : 0.7rem 0.8rem;
+    gap : 0.2rem;
+}
+
+.text-wrapper h1 {
+    font-size : 1.5rem;
+}
+
+#display-screen{
+    padding : 0.5rem;
+    font-size : 1.6rem;
+
+}
+.btn-1{
+    padding : 0.7 0.6rem ;
+    letter-spacing: 0.3rem;
+    font-size : 1rem;
+    font-weight : 700;
+    border-radius : 0.9rem;
+
+}
+.btn-2{
+    font-size : 1rem;
+    padding : 1rem;
+}
+
+.new-btn{
+    padding : 0.9rem;
+    font-size : 1.5rem ;
+   
+}
+.wrapper-2{
+    gap : 1rem;
+}
+.second-btn{
+    padding : 0.9rem ;
+    font-size : 1.5rem 
+}
+
+.wrapper-3{
+    gap : 1rem;
+   
+
+}
+
+
+}
+
+/*--------media queries for 480px----*/
+    @media (min-width : 382px) and (max-width : 480px) {
+    .container{
+    height : 100%;
+    width : 100%;
+    padding : 0.7rem 0.8rem;
+    gap : 0.2rem;
+}
+.text-wrapper h1 {
+    font-size : 2rem;
+}
+
+#display-screen{
+    padding : 0.7rem;
+    font-size : 1.8rem;
+
+}
+
+.btn-1{
+    padding : 0.7 0.6rem ;
+    letter-spacing: 0.3rem;
+    font-size : 1.4rem;
+    font-weight : 700;
+    border-radius : 0.9rem;
+
+}
+.btn-2{
+    font-size : 1.2rem;
+    padding : 1.1rem;
+}
+.new-btn{
+    padding : 1.2rem;
+    font-size : 2rem ;
+   
+}
+.second-btn{
+    padding : 1.2rem ;
+    font-size : 2rem 
+}
+
+.wrapper-2{
+    gap : 1.2rem;
+}
+
+
+.wrapper-3{
+    gap : 1.2rem;
+   
+
+}
+}
+ 
+/*---------------media queries for 481px - 760px --------------*/
+ @media (min-width : 481px) and (max-width : 767px) {
+
+      .container{
+    height : 100%;
+    width : 100%;
+    padding : 0.7rem 0.8rem;
+    gap : 0.2rem;
+}
+
+
+ }
+
+ /*---------------media query for 768px and 1024px---*/
+
+  @media (min-width : 768px) and (max-width : 1024px) {
+
+     .container{
+    height : 100%;
+    width : 100%;
+    padding : 0.7rem 0.8rem;
+    gap : 0.2rem;
+}
+
+  }
+
+  /*--------------media query for 1025 and 1200px----*/
+
+   @media (min-width : 1025px) and (max-width : 1200px) {
+
+     .container{
+    height : 100%;
+    width : 100%;
+    padding : 0.7rem 0.8rem;
+    gap : 0.2rem;
+}
+
+  }
+
+/*------------------------media query 1201px -----*/
+
+    @media (min-width  : 1201px) and (max-width : 1757px) {
+         .container{
+    height : 100%;
+    width : 100%;
+    padding : 0.7rem 0.8rem;
+    gap : 0.2rem;
+}
+    }
+
+    
+
+  
