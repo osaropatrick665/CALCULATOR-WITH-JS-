@@ -37,6 +37,7 @@ body{
     gap : 0.5rem;
     border: 0.5rem solid #000;
     border-radius : 2rem;
+    cursor : pointer ;
 
 }
 .btn-1{
