@@ -1,4 +1,4 @@
-
+'use strict';
 const display = document.getElementById("display-screen");
  const buttonLength = document.getElementsByClassName("new-btn").length;
 function buttonClick( key){
